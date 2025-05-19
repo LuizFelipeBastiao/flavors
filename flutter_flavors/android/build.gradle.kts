@@ -19,3 +19,16 @@ subprojects {
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
+android{
+    flavorDimensions "app"
+    productFlavors{
+        dev{
+            dimension "app"
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+        }
+        prod{
+            dimension "app"
+        }
+    }
+}

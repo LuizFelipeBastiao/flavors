@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.13.1
+  flutter_flavorizr: ^2.4.1
   flutter_test:
     sdk: flutter
 
@@ -87,3 +89,26 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+flavorizr:
+  ide: "vscode"
+  flavors:
+    developmet:
+      app:
+        name: "App development"
+
+      android:
+        applicationId: "com.example.development"
+      ios:
+        bundleId: "com.example.coffee"
+      macos:
+        bundleId: "com.example.coffee"
+    production::
+      app:
+        name: "Production"
+
+      android:
+        applicationId: "com.example.production"
+      ios:
+        bundleId: "com.example.production"
+      macos:
+        bundleId: "com.example.production"
