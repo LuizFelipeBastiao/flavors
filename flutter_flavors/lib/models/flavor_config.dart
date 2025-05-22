@@ -1,5 +1,5 @@
 enum Flavor {
-  developmentm,
+  development,
   production
 }
 
@@ -8,7 +8,7 @@ class FlavorConfig{
 
   static String get title{
     switch (appFlavor){
-      case Flavor.developmentm:
+      case Flavor.development:
         return 'Development';
       case Flavor.production:
         return 'Production';
@@ -16,8 +16,8 @@ class FlavorConfig{
   }
   static String get logoAsset{
     switch (appFlavor){
-      case Flavor.developmentm:
-        return 'assets/logo_dev.png';
+      case Flavor.development:
+        return 'assets//logo_dev.png';
       case Flavor.production:
         return 'assets/logo_prod.png';
     }
