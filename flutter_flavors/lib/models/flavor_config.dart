@@ -18,9 +18,9 @@ class FlavorConfig{
   static String get logoAsset{
     switch (appFlavor){
       case Flavor.development:
-        return 'assets//logo_dev.png';
+        return 'assets/icons/dev.png';
       case Flavor.production:
-        return 'assets/logo_prod.png';
+        return 'assets/icons/prod.png';
     }
   }
   static Color get primaryColor{
@@ -46,5 +46,23 @@ class FlavorConfig{
         );
     }
   }
+
+  static IconData get emailIcon {
+  switch (appFlavor) {
+    case Flavor.development:
+      return Icons.email_outlined;
+    case Flavor.production:
+      return Icons.alternate_email;
+  }
+}
+
+static IconData get passwordIcon {
+  switch (appFlavor) {
+    case Flavor.development:
+      return Icons.lock_outline;
+    case Flavor.production:
+      return Icons.lock;
+  }
+}
 
 }

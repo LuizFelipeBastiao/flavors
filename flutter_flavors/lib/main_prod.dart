@@ -4,8 +4,8 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'app.dart';
 
-void main() {
-  dotenv.load(fileName: ".env.prod");
+Future<void> main()async  {
+  await dotenv.load(fileName: ".env.prod");
   FlavorConfig.appFlavor = Flavor.production;
   
   runApp(MyApp(flavorConfig: FlavorConfig(),),);

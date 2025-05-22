@@ -20,7 +20,7 @@
                 "--target",
                 "lib/main_dev.dart"
             ],
-            "flutterMode": "profile"
+            "flutterMode": "debug"
         },
         {
             "name": "Production",
