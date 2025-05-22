@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'models/flavor_config.dart';
+import '../models/flavor_config.dart';
 
 class LoginPage extends StatefulWidget {
-  const LoginPage({super.key});
+  const LoginPage({super.key, required this.flavorConfig});
 
   @override
   State<LoginPage> createState() => _LoginPageState();

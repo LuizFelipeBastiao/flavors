@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'models/flavor_config.dart';
+import 'pages/login_page.dart';
 class MyApp extends StatelessWidget {
   final FlavorConfig flavorConfig;
   const MyApp({super.key, required this.flavorConfig});
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
         
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const LoginPage(),
+      home: const LoginPage(flavorConfig: FlavorConfig),
     );
   }
 }

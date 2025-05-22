@@ -5,8 +5,6 @@ import 'app.dart';
 
 void main() {
   FlavorConfig.appFlavor = Flavor.production;
-  runApp(MyApp(
-    flavor: 'Production',
-    flavorConfig: FlavorConfig(), // Pass the appropriate FlavorConfig instance here
-  ));
+  
+  runApp(MyApp(flavorConfig: FlavorConfig(),),);
 }
