@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
   final String flavor;
-  const MyApp({Key? key, required this.flavor}):super(key: key);
+  const MyApp({super.key, required this.flavor});
   
   @override
   Widget build(BuildContext context) {
