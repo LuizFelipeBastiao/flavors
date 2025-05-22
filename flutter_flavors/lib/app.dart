@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'models/flavor_config.dart';
 class MyApp extends StatelessWidget {
-  final String flavor;
-  const MyApp({super.key, required this.flavor});
+  final FlavorConfig flavorConfig;
+  const MyApp({super.key, required this.flavorConfig});
   
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           title: const Text('Flutter Demo Home Page'),
         ),
         body: Center(
-          child: Text('Flavor: $flavor'),
+          child: Text('Flavor: $flavorConfig.title'),
         ),
       ),
     );
